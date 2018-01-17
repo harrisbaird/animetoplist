@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /contact/dmca
+Disallow: /out
+Allow: /

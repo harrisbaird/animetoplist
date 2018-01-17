@@ -1,0 +1,12 @@
+<?php $this->Html->setHeader('Search results for ' . h(ucwords($query))); ?>
+<?php foreach($results as $i => $result) {
+	if($result['SearchIndex']['model'] == 'Site') {
+		echo $this->element('search/site', array('result' => $result, 'i' => $i));		
+	} else {
+		echo $this->element('search/series', array('result' => $result, 'i' => $i));
+	}	
+}
+
+echo $this->element('global/pagination');
+
+?>

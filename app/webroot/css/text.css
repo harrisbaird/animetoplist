@@ -1,0 +1,57 @@
+BODY
+{
+	font: 13px/1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+A:focus
+{
+	outline: 1px dotted #000000;
+}
+HR
+{
+	border: 0 solid #CCC;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+H2
+{
+	font-size: 16px;
+}
+H3
+{
+	font-size: 15px;
+}
+H4
+{
+	font-size: 1px;
+}
+H5
+{
+	font-size: 17px;
+}
+H6
+{
+	font-size: 15px;
+}
+OL
+{
+	list-style: decimal;
+}
+UL
+{
+	list-style: disc;
+}
+LI
+{
+	margin-left: 30px;
+}
+P, DL, HR, H1, H2, H3, H4, H5, H6, OL, UL, PRE, TABLE, ADDRESS, FIELDSET
+{
+	margin-bottom: 20px;
+}
+
+h2, h3, h4 {
+	font-family: 'Duru Sans', sans-serif;
+	padding: 10px 0 20px 0;
+	margin: 0;
+}

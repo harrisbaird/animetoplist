@@ -1,0 +1,27 @@
+[submodule "app/plugins/commentable"]
+	path = app/plugins/commentable
+	url = git://github.com/dancake/cakephp-commentable-behavior.git
+[submodule "app/plugins/uploader"]
+	path = app/plugins/uploader
+	url = git://github.com/milesj/uploader.git
+[submodule "app/plugins/enumerable"]
+	path = app/plugins/enumerable
+	url = git://github.com/plank/enumerable.git
+[submodule "app/plugins/queue"]
+	path = app/plugins/queue
+	url = git://github.com/MSeven/cakephp_queue.git
+[submodule "app/plugins/bayesian_average"]
+	path = app/plugins/bayesian_average
+	url = git://github.com/jdbartlett/BayesianAverage.git
+[submodule "geshi"]
+	path = geshi
+	url = http://github.com/markstory/cakephp_geshi.git
+[submodule "app/plugins/forum"]
+	path = app/plugins/forum
+	url = git://github.com/milesj/forum.git
+[submodule "app/plugins/js_validate"]
+	path = app/plugins/js_validate
+	url = git://github.com/mcurry/js_validate.git
+[submodule "app/plugins/resque"]
+	path = app/plugins/resque
+	url = git://github.com/mikesmullin/CakePHP-PHP-Resque-Plugin.git

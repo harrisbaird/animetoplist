@@ -1,0 +1,38 @@
+			<h3><?php echo $tableHeader; ?></h3>
+
+			<p><?php echo $tableDescription; ?></p>
+		
+			<table id="sitesTable">
+				<thead>
+					<tr class="table-help"><td colspan="4">Click header to sort</td></tr>
+					<tr>
+						<th>Site</th>
+						<th class="lang">Language</th>
+						<th>Quality</th>
+						<th class="actions"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+					foreach($series['SeriesSite'] as $site):
+						if(empty($site['Site']['official_name'])) continue;
+					?>
+					<tr class="<?php
+							echo $this->Cycle->cycle('odd', 'even');
+							if($site['Site']['is_premium']) echo ' premium';
+							if($site['Site']['is_boosted']) echo ' boost';
+						?>">
+						<?php $url = empty($site['url']) ? $site['Site']['url'] : $site['url']; ?>
+						<td><?php echo $this->Html->link($site['Site']['official_name'], array('controller' => 'out', 'action' => $outAction, $series['Series']['slug'], $site['Site']['slug']), array('class' => 'external')); ?></td>
+						<td><?php echo $this->At->streamingText('language', $site);?></td>
+						<td><?php echo $this->At->streamingText('quality', $site);?></td>
+						<td class="actions"><?php echo $this->Html->link('Profile', array('controller' => 'sites', 'action' => 'view', $site['Site']['slug']), array('class' => 'profile')); ?></td>
+					</tr>
+					<?php
+					endforeach;
+					echo $this->element('global/no_data', array('data' => $series['SeriesSite'], 'colspan' => 5))
+					?>
+				</tbody>
+			</table>
+			
+			<p>* Not enough data, estimated from the sites overall ratings.</p>
