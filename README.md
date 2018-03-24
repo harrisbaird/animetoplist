@@ -1,7 +1,7 @@
 # Anime Toplist
 
-This is a CakePHP 1.x project from around 2009.
-At one point, it did get a few million uniques a month.
+This is a CakePHP 1.x project from around 2009.  
+At one point, it did get a few million uniques a month.  
 This is non-working as parts are missing or have been removed.
 
 * It crawled and categorised pages on streaming anime sites.
